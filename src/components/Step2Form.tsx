@@ -257,7 +257,7 @@ const router = useRouter()
                   </div>
                 ))}
               </div>
-              <div className="text-sm text-muted-foreground mt-1">
+              <div className="text-sm text-muted-foreground font-medium mt-1">
                 {skills.length}/4
               </div>
             </div>
