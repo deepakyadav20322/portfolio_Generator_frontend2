@@ -8,6 +8,7 @@ import PortfolioDirectory from "@/components/PortfolioDirectory"
 import Footer from "@/components/Footer"
 import Pricing from "@/components/Pricing"
 import Navbar from "@/components/Navbar"
+import Benefit from "@/components/Benefit"
 
 export default function LandingPage() {
   return (
@@ -23,7 +24,7 @@ export default function LandingPage() {
       <PortfolioDirectory/>
 
         {/* Benefits Section */}
-       
+       <Benefit/>
 
 
         {/* Features Grid */}
@@ -31,7 +32,7 @@ export default function LandingPage() {
           <h2 className="text-center text-3xl font-bold">What Makes Us Different</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => (
-              <div key={i} className="rounded-lg border p-6">
+              <div key={i} className="rounded-lg border p-6 hover:bg-slate-100 transition-all duration-150">
                 <div className="mb-4 inline-block rounded-lg bg-blue-100 p-3 text-blue-600">
                   {feature.icon}
                 </div>

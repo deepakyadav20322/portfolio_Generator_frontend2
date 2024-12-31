@@ -1,19 +1,14 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { useState,useEffect } from "react";
 import Link from "next/link";
 import { Github } from 'lucide-react';
-import { useRouter } from "next/navigation";
-import { useAuth } from "@/app/context/authContect";
-import LoadingSpinner from "./Spinner";
+
+
 export default function Login() {
-  const { user, setUser, loading } = useAuth();
-  const router = useRouter();
-  const [isCheckingAuth, setIsCheckingAuth] = useState(true); // Track authentication check
 
   const handleGoogleSignIn = () => {
-    window.location.href = 'http://localhost:3001/auth/google'; // Redirect to your backend
+    window.location.href = `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/google` // Redirect to your backend
   };
 
 
@@ -33,7 +28,7 @@ export default function Login() {
       <main className="container mx-auto flex flex-col items-center justify-center px-4 py-16 md:py-24">
         <div className="mx-auto w-full max-w-sm space-y-6">
           <div className="space-y-2 text-center">
-            <h1 className="text-3xl font-bold">Sign In</h1>
+            <h1 className="text-4xl font-bold">Sign In</h1>
             <p className="text-muted-foreground">
               Sign in to your account using one of the options below.
             </p>

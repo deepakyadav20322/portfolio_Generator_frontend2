@@ -11,7 +11,9 @@ const PortfolioDirectory = () => {
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {Array.from({ length: 6 }).map((_, i) => (
           <div key={i} className="flex items-center gap-4 rounded-lg border p-4">
-            <div className="h-10 w-10 rounded-full bg-muted" />
+            <div className="h-10 w-10 rounded-full bg-muted flex justify-center items-center" >
+              <span className='text-medium text-center'>J</span>
+            </div>
             <div>
               <div className="font-medium">John Smith</div>
               <div className="text-sm text-muted-foreground">Software Engineer</div>
