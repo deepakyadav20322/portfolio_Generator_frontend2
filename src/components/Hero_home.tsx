@@ -29,7 +29,7 @@ const HeroSection = () => {
         variants={parentVariants}
       >
         <motion.h1
-          className="text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]"
+          className="text-4xl lg:text-6xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]"
           variants={textVariants}
         >
           Build Your Portfolio
