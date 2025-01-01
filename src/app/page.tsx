@@ -9,16 +9,17 @@ import Footer from "@/components/Footer"
 import Pricing from "@/components/Pricing"
 import Navbar from "@/components/Navbar"
 import Benefit from "@/components/Benefit"
-
+import  GridWithBackgroundAndCells from '@/components/BackgroundBoxCells'
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col">
     
     <Navbar/> 
-      <main className="flex-1 max-w-7xl w-full mx-auto">
+      <main className="flex-1 max-w-7xl w-full mx-auto ">
         {/* Hero Section */}
-       
+        <GridWithBackgroundAndCells>
        <HeroSection/>
+       </GridWithBackgroundAndCells>
 
         {/* Portfolio Directory */}
       <PortfolioDirectory/>

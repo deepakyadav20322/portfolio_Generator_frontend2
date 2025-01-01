@@ -2,6 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
+import GridWithBackgroundAndCells from '@/components/BackgroundBoxCells'
+import AvatarStack from './AvatarStreck';
 
 const HeroSection = () => {
   const textVariants = {
@@ -18,7 +20,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="container py-24 sm:py-32">
+    <section className="container py-24 sm:py-32 relative bg-transparent z-10">
+  
       <motion.div
         className="mx-auto max-w-[980px] text-center"
         initial="hidden"
@@ -54,7 +57,12 @@ const HeroSection = () => {
             </Button>
           </motion.div>
         </motion.div>
+        <motion.div className='flex justify-center items-center  my-4' variants={textVariants}>
+          {/* <AvatarStack/> */}
+        </motion.div>
+
       </motion.div>
+    
     </section>
   );
 };
