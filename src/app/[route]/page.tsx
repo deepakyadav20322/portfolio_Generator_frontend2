@@ -19,10 +19,10 @@ export default function PortfolioPage() {
 
  
 
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
-    document.documentElement.classList.toggle('dark')
-  }
+  // const toggleTheme = () => {
+  //   setTheme(theme === 'light' ? 'dark' : 'light')
+  //   document.documentElement.classList.toggle('dark')
+  // }
  
 
  
