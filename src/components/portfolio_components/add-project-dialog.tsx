@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Project } from '@/types/Project';
 import { ProjectCard } from './Project-card';
 import { Textarea } from '../ui/textarea';
+import {X } from 'lucide-react'
 
 interface AddProjectDialogProps {
   open: boolean;
@@ -92,7 +93,7 @@ export function AddProjectDialog({ open, onOpenChange }: AddProjectDialogProps) 
         <DialogHeader>
           <DialogTitle>Add New Project</DialogTitle>
           <DialogDescription>
-            Fill in the details of your new project. Click add when you're done.
+            Fill in the details of your new project. Click add when you are done.
           </DialogDescription>
         </DialogHeader>
         <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
@@ -169,7 +170,7 @@ export function AddProjectDialog({ open, onOpenChange }: AddProjectDialogProps) 
                     >
                       {tag}
                       <Button variant="ghost" size="sm" onClick={() => handleRemoveTag(index)}>
-                      <span>&#215;</span>
+                      <span><X/></span>
                       </Button>
                     </div>
                   ))}
@@ -197,7 +198,7 @@ export function AddProjectDialog({ open, onOpenChange }: AddProjectDialogProps) 
           <ProjectCard
             key={project.id}
             project={project}
-            onEdit={(id) =>console.log('onEdit')}
+            onEdit={(id) =>console.log('onEdit',id)}
             onDelete={(id) => console.log("Delete", id)}
           />
         ))}

@@ -38,6 +38,8 @@ export function AddProjectSection() {
                   className="px-2 py-1 bg-blue-100 text-blue-800 text-sm rounded-md"
                 >
                   {tag}
+                  {/* Ise(span) hatana hai */}
+                  <span className='hidden' onClick={(e) => setProjects([...projects])}>button</span>
                 </span>
               ))}
             </div>

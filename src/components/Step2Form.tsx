@@ -263,7 +263,7 @@ const router = useRouter()
             </div>
 
             {/* Optional Fields */}
-            {["phone", "linkedin", "github", "youtube"].map((field) => (
+            {(["phone", "linkedin", "github", "youtube"] as const).map((field) => (
               <div key={field} className="space-y-2">
                 <Label htmlFor={field}>{`${
                   field.charAt(0).toUpperCase() + field.slice(1)
@@ -273,7 +273,7 @@ const router = useRouter()
                   name={field}
                   type={field === "phone" ? "tel" : "url"}
                   placeholder={`Enter your ${field}`}
-                  value={(formData as any)[field]}
+                  value={formData[field]}
                   onChange={handleChange}
                 />
               </div>

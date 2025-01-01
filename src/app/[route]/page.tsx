@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-
+import { Button } from '@/components/ui/button'
 import { User, Folder, Briefcase } from 'lucide-react'
 
 import { EducationSection } from '@/components/EducationSection'
@@ -19,10 +19,10 @@ export default function PortfolioPage() {
 
  
 
-  // const toggleTheme = () => {
-  //   setTheme(theme === 'light' ? 'dark' : 'light')
-  //   document.documentElement.classList.toggle('dark')
-  // }
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+    document.documentElement.classList.toggle('dark')
+  }
  
 
  
@@ -59,14 +59,15 @@ export default function PortfolioPage() {
 
 
               <PortfolioDrawer/>
-              {/* <Button
+              <Button
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
-                className="ml-4"
+                className="ml-4 hidden"
               >
-                {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
-              </Button> */}
+                {/* {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />} */}
+                {theme}
+              </Button>
              
             </nav>
           </div>

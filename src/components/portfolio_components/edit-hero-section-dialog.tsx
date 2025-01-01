@@ -17,7 +17,7 @@ interface EditHeroSectionDialogProps {
   heroData: HeroData;
   setHeroData: (data: HeroData) => void;
   initialData?: HeroData,
-  onSave: (updatedData: any) => void; 
+  onSave: (updatedData: HeroData) => void; 
 
 }
 

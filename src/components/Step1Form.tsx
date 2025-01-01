@@ -76,7 +76,7 @@ export default function RouteChecker({ setPortfolioURL, portfolioURL, setCurrent
           <div className="flex-1">
             <Input
               placeholder="your-unique-route"
-              className="h-11"
+              className={`h-11 ${availability?'border border-green-400':""}`}
              
               onChange={(e) => setPortfolioURL(e.target.value)}
             />

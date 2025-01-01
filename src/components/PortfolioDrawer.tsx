@@ -12,7 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Settings, Upload } from "lucide-react"
+import { Settings } from "lucide-react"
 import Link from "next/link"
 import Logout from "./Logout"
 

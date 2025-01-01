@@ -6,7 +6,7 @@ import { useAuth } from "@/app/context/authContect";
 import { useRouter } from "next/navigation";
 import LoadingSpinner from '@/components/Spinner'
 
-const page = () => {
+const Page = () => {
 
   const { user } = useAuth();
   const router = useRouter();
@@ -48,4 +48,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

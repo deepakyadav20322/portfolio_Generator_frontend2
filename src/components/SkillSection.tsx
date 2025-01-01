@@ -1,4 +1,4 @@
-import { SkillRecord } from '@/types/Skill';
+
 import React, { useState } from 'react'
 import { AddSkillDialog } from './portfolio_components/add-skill-dialog';
 import { Button } from './ui/button';
