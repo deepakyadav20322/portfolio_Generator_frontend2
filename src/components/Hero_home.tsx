@@ -2,8 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
-import GridWithBackgroundAndCells from '@/components/BackgroundBoxCells'
-import AvatarStack from './AvatarStreck';
+
 
 const HeroSection = () => {
   const textVariants = {

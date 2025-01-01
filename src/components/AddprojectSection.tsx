@@ -11,10 +11,10 @@ export function AddProjectSection() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const addProject = (project: Project) => {
-    setProjects([...projects, { ...project, id: projects.length + "1" }]);
-    setIsDialogOpen(false);
-  };
+  // const addProject = (project: Project) => {
+  //   setProjects([...projects, { ...project, id: projects.length + "1" }]);
+  //   setIsDialogOpen(false);
+  // };
 
   return (
     <div className=" bg-white md:p-2 p-6 sm:p-12">

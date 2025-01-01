@@ -8,7 +8,7 @@ import LoadingSpinner from '@/components/Spinner'
 
 const page = () => {
 
-  const { user, setUser, loading } = useAuth();
+  const { user } = useAuth();
   const router = useRouter();
   const [isCheckingAuth, setIsCheckingAuth] = useState(true); // Track authentication check
 

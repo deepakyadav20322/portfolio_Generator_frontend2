@@ -4,17 +4,20 @@ import { AddSkillDialog } from './portfolio_components/add-skill-dialog';
 import { Button } from './ui/button';
 
 const SkillSection = () => {
-    const [skillList, setSlillList] = useState<SkillRecord[]>([]);
-    const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+    // const [skillList, setSlillList] = useState<SkillRecord[]>([]);
   
-    const handleAddEducation = (newEducation: SkillRecord) => {
-      setSlillList([...skillList, newEducation]);
-    };
+    // const handleAddEducation = (newEducation: SkillRecord) => {
+    //   setSlillList([...skillList, newEducation]);
+    // };
   
-    const handleDeleteEducation = (index: number) => {
-      const updatedList = skillList.filter((_, i) => i !== index);
-      setSlillList(updatedList);
-    };
+    // const handleDeleteEducation = (index: number) => {
+    //   const updatedList = skillList.filter((_, i) => i !== index);
+    //   setSlillList(updatedList);
+    // };
+
+
+    
   return (
     
     <div className="p-2 bg-white text-black ">

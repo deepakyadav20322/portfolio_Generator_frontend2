@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-import { DiscIcon as Discord, CheckCircle, Globe, Search, Rocket, BarChart, Contact } from 'lucide-react'
+import { DiscIcon as Discord} from 'lucide-react'
 import ContactPage from "@/components/Contact"
 import HeroSection from "@/components/Hero_home"
 import FAQ from '@/components/Faq'

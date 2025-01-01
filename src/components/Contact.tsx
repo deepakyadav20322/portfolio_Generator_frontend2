@@ -15,8 +15,8 @@ export default function ContactPage() {
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tight">Get In Touch</h1>
             <p className="text-lg text-muted-foreground">
-              Have questions about Portfolio.dev? We&apos;re here to help! Whether you need assistance with
-              your portfolio or want to learn more about our features, don&apos;t hesitate to reach out.
+              Have questions about Portfolio.dev? We are here to help! Whether you need assistance with
+              your portfolio or want to learn more about our features, do not hesitate to reach out.
             </p>
           </div>
 

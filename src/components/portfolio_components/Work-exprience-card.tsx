@@ -75,6 +75,10 @@ export function WorkExperienceCard({ experience,onEdit, onDelete }: WorkExperien
                   </>
                 )}
               </button>
+          <div className="hidden">
+              <button onClick={() => onEdit && onEdit(experience.id)}>Edit</button>
+              <button onClick={() => onDelete && onDelete(experience.id)}>Edit</button>
+              </div>
         </div>
         </div>
         

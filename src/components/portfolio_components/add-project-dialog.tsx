@@ -169,7 +169,7 @@ export function AddProjectDialog({ open, onOpenChange }: AddProjectDialogProps) 
                     >
                       {tag}
                       <Button variant="ghost" size="sm" onClick={() => handleRemoveTag(index)}>
-                        &times;
+                      <span>&#215;</span>
                       </Button>
                     </div>
                   ))}
@@ -197,7 +197,7 @@ export function AddProjectDialog({ open, onOpenChange }: AddProjectDialogProps) 
           <ProjectCard
             key={project.id}
             project={project}
-            onEdit={(id) =>console.log('jk')}
+            onEdit={(id) =>console.log('onEdit')}
             onDelete={(id) => console.log("Delete", id)}
           />
         ))}

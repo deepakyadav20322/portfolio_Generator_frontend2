@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { Button } from "@/components/ui/button"
+import { useState } from 'react'
+
 import { User, Folder, Briefcase } from 'lucide-react'
 
 import { EducationSection } from '@/components/EducationSection'

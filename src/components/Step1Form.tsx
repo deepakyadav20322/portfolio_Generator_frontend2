@@ -1,11 +1,10 @@
 'use client'
 
-import { useAuth } from "@/app/context/authContect";
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRight } from 'lucide-react'
 import { SetStateAction, Dispatch, useState } from "react";
-import Link from "next/link";
 import { toast } from "sonner";
 
 type FormState = 'step1' | 'step2' | 'completed';

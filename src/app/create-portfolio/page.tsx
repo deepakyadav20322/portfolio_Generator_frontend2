@@ -1,5 +1,5 @@
 'use client';
-import dynamic from 'next/dynamic';
+
 import Link from 'next/link';
 import Step1Form from '@/components/Step1Form';
 import React, { useState, useEffect } from 'react';

@@ -118,7 +118,7 @@ export function AddWorkExperienceDialog({
           <DialogHeader>
             <DialogTitle>Add New Work Experience</DialogTitle>
             <DialogDescription>
-              Fill in the details of your new work experience. Click add when you're done.
+              Fill in the details of your new work experience. Click add when you are done.
               
             </DialogDescription>
           </DialogHeader>

@@ -1,5 +1,4 @@
 'use client'
-import { useEffect } from 'react';
 
 interface LoadingSpinnerProps {
   size?: 'sm' | 'md' | 'lg';
