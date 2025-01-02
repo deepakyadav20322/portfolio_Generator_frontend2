@@ -33,7 +33,7 @@ const Page = () => {
     } else {
       setIsCheckingAuth(false); // Stop the authentication check once complete
     }
-  }, [user, router]);
+  }, []);
 
 
   if ( isCheckingAuth) {

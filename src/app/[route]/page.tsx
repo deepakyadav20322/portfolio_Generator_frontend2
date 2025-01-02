@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { User, Folder, Briefcase } from 'lucide-react'
 
@@ -11,21 +11,63 @@ import SkillSection from '@/components/SkillSection'
 import HeroSection from '@/components/HeroSection'
 import ContactPage from '@/components/Contact'
 import { PortfolioDrawer } from '@/components/PortfolioDrawer'
-
-
+import { useRouter } from 'next/navigation'
 
 export default function PortfolioPage() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const [found,setFound] = useState(true);
+  const router = useRouter()
 
- 
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
     document.documentElement.classList.toggle('dark')
   }
- 
 
- 
+  // we write the api for checking that this url portfolio exist or not?
+  useEffect(() => {
+    const checkUserExists = async () => {
+      const username = window.location.pathname.split('/').pop();
+      if (username) {
+        try {
+          const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/${username}`);
+          if (response.ok) {
+            const userExists = await response.json();
+            console.log('User exists:', userExists);
+            setFound(true);
+          } else {
+            setFound(false);
+          }
+        } catch (error) {
+          console.error('Error checking user existence:', error);
+          setFound(false); // Ensure 'not found' is handled properly even if an error occurs.
+        }
+      }
+    };
+  
+    checkUserExists();
+  }, [router]); // Dependency updated to re-run on URL change.
+  
+
+  if(found==false){
+    return (
+      <div className="flex flex-col items-center justify-center h-screen bg-gray-100 text-gray-800">
+        <div className="text-center p-6 rounded-lg shadow-lg bg-white">
+          <h1 className="text-6xl font-bold text-blue-500 animate-bounce">404</h1>
+          <h2 className="text-2xl font-semibold mt-4">Page Not Found</h2>
+          <p className="text-gray-600 mt-2">
+            Oops! The page you are looking for does not exist or has been moved.
+          </p>
+          <a
+            href="/"
+            className="mt-6 inline-block px-6 py-3 text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow transition-transform transform hover:scale-105"
+          >
+            Go Back to Home
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={theme}>

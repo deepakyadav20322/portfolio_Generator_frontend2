@@ -140,7 +140,7 @@ const HeroSection = () => {
         </div>
         <div className="flex justify-center transition-all duration-300 ease-in-out">
           <div className="w-full max-w-sm rounded-full bg-muted flex items-center justify-center">
-            <Image src="/profile.svg" alt="Profile" className="w-full max-w-2xl" />
+            <Image src="/profile.svg" height={500} width={500} alt="Profile" className="w-full max-w-2xl" />
           </div>
         </div>
       </section>
