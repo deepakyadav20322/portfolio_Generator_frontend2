@@ -21,7 +21,7 @@ const Benefit = () => {
         {benefits.map((benefit, index) => (
           <div
             key={index}
-            className="relative rounded-lg border bg-card p-8 "
+            className="relative rounded-lg border bg-card p-8 hover:bg-slate-100 transition-colors duration-150 "
           >
             <div className="flex items-start justify-between">
               <div className="space-y-2">
