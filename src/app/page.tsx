@@ -11,6 +11,7 @@ import Navbar from "@/components/Navbar"
 import Benefit from "@/components/Benefit"
 import  GridWithBackgroundAndCells from '@/components/BackgroundBoxCells'
 import FeaturesSection from "@/components/FeatureSection"
+import TwitterCarousel from "@/components/TwitterCarosal"
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -62,7 +63,7 @@ export default function LandingPage() {
       
        <FAQ/>
       </main>
-
+      <TwitterCarousel/>
     <Footer/>
     </div>
   )
